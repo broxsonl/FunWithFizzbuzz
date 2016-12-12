@@ -13,13 +13,12 @@ function fizzBuzz(n) {
 
     let answer = '';
 
-    for (let key in fizzBuzzObj)
-      if (!(i % parseInt(key))) {
-        answer += fizzBuzzObj[key]
-      }
+  for (let key in fizzBuzzObj)
+    if (!(i % parseInt(key))) {
+      answer += fizzBuzzObj[key]
     }
-    console.log(output || i);
   }
+  console.log(output || i);
 }
 
 fizzBuzz(100);

@@ -36,4 +36,4 @@ function isValid(input) {
   else return true;
 }
 
-console.log(lengthofLastWord(', !! ,'));
+console.log(lengthofLastWord(testString));

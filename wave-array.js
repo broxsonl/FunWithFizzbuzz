@@ -1,7 +1,7 @@
 'use strict';
 
 // adding in non-integers to ensure the logic below only pushers to array if the item at the index is a number.
-let exampleArray = ['cat', 1, 2, 2, 3, 4, 5, 6, 10, 20, 50, 100, 500, 'dog', {}, true];
+let exampleArray = [800, 'cat', 1, 2, 2, 3, 4, 5, 6, 10, 20, 50, 100, 500, 'dog', {}, true];
 
 function waveArray(array) {
   if (!array.length) throw new Error('No input.');

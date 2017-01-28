@@ -12,7 +12,6 @@ function permuteString(str) {
   function permute(pre, suf) {
     // Once we've moved around every letter that is not the final letter, we push the result to an array
     if (suf.length === 1) return answerArray.push(pre + suf);
-
     for (let i = 0; i < suf.length; i++) {
       swap(0, i, suf);
       // recursive call

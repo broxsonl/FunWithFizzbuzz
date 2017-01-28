@@ -6,17 +6,19 @@ function fibonacci(n) {
 
   return (fibonacci(n - 1) + fibonacci(n - 2));
 }
-// calling it with a low # so it doesn't iterate too long.
-fibonacci(5);
 
+console.log(fibonacci(8));
+//
 function betterFibonacci(n) {
-  let [a, b] = [1, 0];
-  while( n-- > 0) {
-
-    [a, b] = [b + a, a];
+  let a = 1;
+  let b = 0;
+  while( n > 0) {
+    let temp = a;
+    a = b + a;
+    b = temp;
+    n--;
   }
   return b;
 }
 
-// will complete quickly no mater how large the number called with it.
-betterFibonacci(200);
+console.log(betterFibonacci(6));
